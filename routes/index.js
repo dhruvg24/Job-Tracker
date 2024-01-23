@@ -7,6 +7,7 @@ const { authMiddleware } = require("../middleware");
 
 router.route("/").get((req, res) => {
   res.render("landing");
+  // landing page which is landing.ejs
 });
 
 router.use("/auth", authRouter);
